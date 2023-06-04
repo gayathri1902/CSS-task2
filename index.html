@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    ul {
+      padding-left: 2rem;
+      list-style-type: none;
+    }
+    
+    ul li {
+      padding-left: 3rem;
+      background-position: left center;
+      background-size: 1.6rem 1.6rem;
+      background-repeat: no-repeat;
+      margin-bottom: 0.5rem;
+      line-height: 1.6rem;
+      color: black;
+    }
+
+    ul li::before {
+      content: "";
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      background-image: url(star.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      filter: invert(65%) sepia(100%) saturate(800%);
+      margin-right: 0.5em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>Hummus</li>
+    <li>Pita</li>
+    <li>Green salad</li>
+    <li>Halloumi</li>
+  </ul>
+</body>
+</html>
